@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>Register form</title>
+</head>
+<body>
+   <form action="insert.php" method="POST"></form> 
+   <table>
+       <tr>
+           <td>Name :</td>
+           <td><input type="text" name="Username" required></td>
+       </tr>
+       <tr>
+        <td>Password :</td>
+        <td><input type="password" name="Password" required></td>
+    </tr>
+    <tr>
+        <td>Gender :</td>
+        <td>
+            <input type="radio" name="Gender" value="m" required>Male
+            <input type="radio" name="Gender" value="f"required>Female
+        </td>
+    </tr>
+    <tr>
+        <td>Email:</td>
+        <td><input type="text" name="Email" required></td>
+    </tr>
+    <tr>
+        <td>Phone no :</td>
+        <td>
+            <select name="phonecode" required>
+                <option selected hidden value="">Select Code</option>
+                <option value="254">254</option>
+                <option value="255">255</option>
+                <option value="256">256</option>
+            </select>
+            <input type="phone" name="Phone" required>
+        </td>
+        <td><input type="submit" value="Submit"></td>
+    </tr>
+   </table>
+</body>
+</html>
